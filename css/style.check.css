@@ -1,0 +1,264 @@
+ *{
+     transition:.5s;
+ }
+ body{
+     transition:.5s;
+ }
+ /* The Overlay (background) */
+ .overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    right: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.8s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+
+
+.menu-bar {
+    display:inline-block;
+    cursor: pointer;
+    padding:30px;
+    //margin-right:-160px;
+    float:right;
+    margin-top:-95px;
+}
+#home-section .container .row .showcase{
+    margin-top:70px;
+}
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.icon-bar {
+    height: 100%;
+    width: 90px;
+    text-align: center;
+    background-color: #555;
+}
+
+.icon-bar a {
+    padding: 16px;
+    display: block;
+    transition: all 0.1s ease;
+    color: white;
+    font-size: 36px;
+}
+
+.icon-bar a:hover {
+    background-color: #000;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+Horizontal Example
+.icon-bar {
+    width: 100%;
+    text-align: center;
+    background-color: #555;
+    overflow: auto;
+}
+
+.icon-bar a {
+    width: 20%;
+    padding: 12px 0;
+    float: left;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 36px;
+}
+
+.icon-bar a:hover {
+    background-color: #000;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    top: 15%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 18px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+    
+}
+#low:hover{
+opacity:1;
+}
+#myNav{
+    border-radius:50px 0px 0px 50px;
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px !important; /* Override the font-size specified earlier (36px) for all navigation links */
+}
+header .logo img{
+    width:230px;
+    height:90px;
+}
+header{
+    margin-top:1px;
+    background:white;
+    top:50;
+    height:50px;
+    //position:fixed;
+    width:100%;
+    transition:.5s;
+}
+.search form .input{
+    background-image:url('http://cms.cm-ourique.pt/upload_files/client_id_1/website_id_1/Destaques/Desporto/Peddy_Paper.jpg');
+    background-position:10px 19px 12px 12px;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
+    .search input[type=text]{
+    margin-top:20px;
+    width:190px;
+    box-sizing:border-box;
+    border:2px solid #ccc;
+    border-radius:10px;
+    font-size:16px;
+    background-color:white;
+    background-image:url('http://cms.cm-ourique.pt/upload_files/client_id_1/website_id_1/Destaques/Desporto/Peddy_Paper.jpg');
+    background-position:10px 19px 12px 12px;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    padding:12px 20px 12px 40px;
+    -webkit-transition:width 0.4s ease-in-out;
+    transition:width 0.4s ease-in-out;
+    background-size:50px;
+   
+    margin-left:50px;
+    }
+    input[type=text]:focus{
+    width:400px;
+    border-radius:10px;
+    transition:.5s;
+    }
+    
+    marquee{
+        margin-top:-50px;
+    }
+    /*==============section==========*/
+    #home-section{
+        background-image:url("https://images.unsplash.com/photo-1521731978332-9e9e714bdd20?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=778623bd3624b21b4b8f3cf99f30fb3a&auto=format&fit=crop&w=753&q=80");
+        background-repeat:no-repeat;
+        background-size:cover;
+        background-attachment:fixed;
+        height:600px;
+        width:100%;
+        margin-top:60px;
+        transition:.5s;
+        border-bottom:2px solid skyblue;
+    }
+    #home-section .text-section{
+        margin-top:170px;
+        padding:20px;
+        color:white;
+        line-height:30px;
+        font-family:Gothland;
+    }
+    .text-section h1,h2{
+        line-height: 0.9;
+        font-family:Gothland;
+    }
+    .text-section h1{
+        font-size:50px;
+        font-family:Neck Romancer;
+    }
+    .text-section h5{
+        color:skyblue;
+        font-family:Gothland;
+    }
+    #home-section .text-section .signup-btn{
+        font-size:30px;
+        border:1px solid white;
+        padding:1px 30px 1px 30px;
+        margin-top:30px;
+        border-radius:4px;
+        
+    }
+    #home-section .text-section .signup-btna{
+        color:rgb(113, 194, 226);
+    }
+    #home-section .text-section .signup-btn a{
+        text-decoration:none;
+    }
+    #home-section .text-section .signup-btn:hover{
+        background:white;
+        transition:.5s ease-in-out;
+    }
+    #home-section .text-section .signup-btn:hover::after{
+        background:white;
+        transition:.5s ease-out
+    }
+    /*Form secction*/
+    #form-section{
+        height:570px;
+        padding:20px;
+        margin-top:50px;
+        transition:.5s;
+    }
+    #form-section form{
+        margin-top:50px;
+    }
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 500px) {
+    .overlay a {font-size: 20px}
+    .closebtn {
+        font-size: 40px !important;
+        top: 15px;
+        right: 35px;
+    }
+   
+}

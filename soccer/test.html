@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+	<link href="img/favicon.png" rel="icon">
+	<link rel="stylesheet" type="text/css" href="css/style.test.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.2css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+</head>
+<body>
+	<header>
+        <div class="logo">
+            <img src="img/inits.jpg">
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                 <li><a href="">About</a></li>
+                <li class="sub-menu"><a href="">Player</a>
+                    <ul>
+                        <li><a href="">Add Player</a></li>
+                        <li><a href="">View Players</a></li>
+                    </ul>
+                </li>
+                <li class="sub-menu"><a href="">Tournaments</a>
+                    <ul>
+                        <li><a href="">Add Tournaments</a></li>
+                        <li><a href="">View Tournaments</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
+    </header>
+	<div class="first-section">
+       <!-- <img src="img/foot1.jpg">-->
+        <div class="text">
+            <h1>FRIDAY VIBES(PES4)</h1>
+            <h5>Playing football on Friday is not a sign of laziness <br/>
+                but of Friendship.it displays a sign of exercise.<br/>You can 
+                also join us in this awesome match</h5>
+        </div>
+    </div>
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<script>
+        $(document).ready(function(){
+            $(.menu-toggle).click(function(){
+                $(.nav).toggleclass('active')
+            })
+            $('ul li').click(function(){
+                $(this).siblings
+            })
+        })
+    </script>
+</body>
+</html>

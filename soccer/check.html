@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.check.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.2css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <!--Favicon-->
+        <link href="img/favicon.png" rel="icon">
+    </head>
+    <body>
+        <!--Nav begins-->
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="logo">
+                            <img src="img/inits.jpg">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="search">
+                            <form>
+                                <input class="input" type="text" name="search" placeholder="  Search...">
+                            </form>
+                             <h5 style="margin-top:-46px;float:right;margin-right:-250px;"><span class="num" style="color:skyblue;">2018</span> FOOTBALL MATCH</h5>               
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div id="myNav" class="overlay">
+            
+                    <!-- Button to close the overlay navigation -->
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                          
+                    <!-- Overlay content -->
+                    <div class="overlay-content">
+                        <a href="#">Home</a>
+                        <a href="#">About</a>
+                        <a href="#">Players</a>
+                        <a href="http://localhost/advanced/Tournament_details.php">Tournaments</a>
+                        <a href="#">Game Records</a>
+                    </div>
+                          
+                </div>
+                <div class="menu-bar" onclick="openNav()">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            <!-- The overlay -->
+           
+        </header>
+        <!--Nav ends-->
+        <!--Info section-->
+        <section id="home-section">
+           <!-- <marquee>
+                2018 FOOTBALL MATCH
+            </marquee>-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="text-section">
+                            <h1><span class="alt" style="font-family:Gothland;">FRIDAY VIBES</span>(PES4)</h1><br/>
+                            <h5 style="line-height:30px;">
+                                Playing football on Friday is not a sign of laziness <br/>
+                                but of Friendship.it displays a sign of exercise.<br/>You can 
+                                also join us in this awesome match<br/><br/>
+                                <span class="signup-btn"><a href="#form-section">JOIN</a></span>
+                            </h5>
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-6" id="low" style="position:fixed;background-image: url('https://images.unsplash.com/photo-1509928015542-fcc9b3bcd048?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b1814a9ea3b5fa0834c7c86685fda827&auto=format&fit=crop&w=500&q=60');height:350px;width:20%;float:right;border-radius:20px;margin-right:-20px;opacity:0.7;margin-top:1px;margin-left:870px;">
+                        <div class="showcase" style="margin-top:30px;margin-right:-2px;">
+                            <img src="img/icon1.png" style="opacity:1;border-radius:120px;width:100px;margin:0px auto;">
+                            <h5 style="opacity:4; color:white;">You can add your self to the football club group by filling the forms below</h5>
+                            <img src="img/03.png" style="width:40px;margin:0px auto;">
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="form-section">
+            <div class="container">
+                    <hr/ style="height:5px;background:skyblue;width:120px;margin-top:-20px;margin-bottom:30px;">
+                    <form method="post" action="insert_users.php">
+                            <div class="form-row">
+                              <div class="form-group col-md-6">
+                                <label for="inputName">Firstname</label>
+                                <input type="text" name="firstname" class="form-control" placeholder="Firstname">
+                              </div>
+                              <div class="form-group col-md-6">
+                                <label for="inputName">Lastname</label>
+                                <input type="text" name="lastname" class="form-control" placeholder="Lastname">
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label for="inputEmail">Email</label>
+                              <input type="email" name="email" class="form-control" placeholder="Email e.g ajalablessing49@gmail.com">
+                            </div>
+                            <div class="form-group">
+                              <label for="inputAddress2">Password</label>
+                              <input type="text" name="password" class="form-control" placeholder="Password">
+                            </div>
+                            <div class="form-row">
+                              <div class="form-group col-lg-12">
+                                <label for="inputState">Gender</label>
+                                <select name="gender" class="form-control">
+                                  <option selected>Male</option>
+                                  <option>Female</option>
+                                </select>
+                              </div>
+                              
+                            </div>
+                            <div class="form-group">
+                              
+                            </div>
+                            <button type="submit" name="submit" class="btn btn-primary btn-block">Join Team <img src="img/02.png" style="width:30px;height:30px;"></button>
+                          </form>
+                          <hr/ style="height:5px;background:rgb(88, 172, 88);width:220px;margin-top:40px;margin-bottom:30px;">
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <
+                    </div>
+                    <div class="col-md-6">
+                        
+                    </div>
+                </div>
+            </div>
+        </footer>
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script>
+    /* Open when someone clicks on the span element */
+    function openNav() {
+        document.getElementById("myNav").style.width = "40%";
+        document.getElementById("myNav").style.height = "70%";
+    }
+    
+    /* Close when someone clicks on the "x" symbol inside the overlay */
+    function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+    }
+    
+    
+    
+    
+    </script>
+    </body>
+    </html>

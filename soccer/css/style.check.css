@@ -1,0 +1,366 @@
+
+body{
+    transition:.5s;
+}
+*{
+    transition:.5s;
+}
+ /* The Overlay (background) */
+ .overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    right: 0;
+    top: 0;
+    color:white;
+    background-color: rgba(51, 204, 100, 0.354); /* Black fallback color */
+    background-color: rgba(32, 165, 47, 0.422); /* Black w/opacity */
+    overflow-y: hidden; /* Disable horizontal scroll */
+    transition: 0.8s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+#myNav .overlay-content a:hover{
+    text-decoration:none;
+}
+
+.menu-bar {
+    display:inline-block;
+    cursor: pointer;
+    padding:30px;
+    float:right;
+    margin-top:-125px;
+
+    color:blue;
+   
+}
+#home-section .container .row .showcase{
+    margin-top:70px;
+}
+
+
+.icon-bar {
+    height: 100%;
+    width: 90px;
+    text-align: center;
+    background-color: #555;
+}
+
+.icon-bar a {
+    padding: 16px;
+    display: block;
+    transition: all 0.1s ease;
+    color: white;
+    font-size: 36px;
+}
+
+.icon-bar a:hover {
+    background-color: #000;
+}
+0  
+.active {
+    background-color: #4CAF50;
+}
+
+.icon-bar {
+    width: 100%;
+    
+    background-color: #555;
+    overflow: auto;
+}
+
+.icon-bar a {
+    width: 20%;
+    padding: 12px 0;
+    float: left;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 36px;
+}
+
+.icon-bar a:hover {
+    background-color: #000;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    top: 30%; 
+    width: 100%;
+    padding:20px;
+    margin-top: -30px; 
+    display: flex;
+    
+}
+#low:hover{
+    opacity:1;
+}
+#myNav{
+    border-radius:0px 0px 0px 0px;
+    box-shadow:4px 4px 4px 1px rgb(131, 121, 121);
+    width:100%;
+    display:none;
+    transition:.3s;
+    margin-top:110px;
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 15px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #dfe2ec;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+    
+}
+
+/* Position the close button (top right corner) */
+.closebtn {
+    position: absolute;
+    top: -40px;
+    right: 30px;
+    font-size: 60px !important; /* Override the font-size specified earlier (36px) for all navigation links */
+    margin-top:-20px;
+    margin-right:-20px;
+}
+header .logo img{
+    width:230px;
+    height:90px;
+}
+header{
+    margin-top:1px;
+    background:white;
+    top:50;
+    height:50px;
+    //position:fixed;
+    width:100%;
+    transition:.5s;
+    
+}
+.search .input{
+    background-image:url('http://cms.cm-ourique.pt/upload_files/client_id_1/website_id_1/Destaques/Desporto/Peddy_Paper.jpg');
+    background-position:10px 19px 12px 12px;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    color:rgba(41, 122, 214, 0.548);
+}
+
+.input{
+    margin-top:20px;
+    width:190px;
+    box-sizing:border-box;
+    border:2px solid #98fb98;
+    border-radius:10px;
+    background:palegreen;
+    font-size:16px;
+    padding:12px 20px 12px 40px;
+    -webkit-transition:width 0.4s ease-in-out;
+    transition:width 0.4s ease-in-out;
+    background-size:50px;
+    margin-left:50px;
+    color:white;
+    box-shadow:3px 3px 3px skyblue;
+    
+}
+
+.input:hover{
+    box-shadow:2px 2px 2px 2px silver;
+}
+
+input[type=text]:focus{
+    width:400px;
+    border-radius:10px;
+    transition:.5s;
+}
+input[type=email]:focus{
+    width:400px;
+    border-radius:10px;
+    transition:.5s;
+}
+input[type=password]:focus{
+    width:400px;
+    border-radius:10px;
+    transition:.5s;
+}
+
+marquee{
+    margin-top:-50px;
+    color:white;
+}
+    /*==============section part==================*/
+#home-section{
+    background:linear-gradient(to right, rgba(109, 179, 242, .6), rgba(109, 179, 242, .6)),url("../img/lap.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
+    height:750px;
+    width:100%;
+    margin-top:60px;
+    transition:.5s;
+    border-bottom:2px solid skyblue;
+}
+#home-section .text-section{
+    margin-top:100px;
+    padding:20px;
+    color:rgb(211, 205, 205);
+    line-height:30px;
+    margin-left:500px;
+    width:100%;
+
+
+    
+}
+.text-section h1,h2{
+    line-height: 0.9;
+    font-family:Gothland;
+}
+.text-section h1{
+    font-size:70px;
+    font-family:gothland;
+    width:100%;
+}
+.text-section h5{
+    color:skyblue;
+    font-family:Gothland;
+}
+#home-section .text-section .signup-btn{
+    font-size:30px;
+    border:1px solid palegreen;
+    padding:1px 30px 1px 30px;
+    margin-top:30px;
+    border-radius:4px;
+    
+}
+#home-section .text-section .signup-btna{
+    color:rgb(113, 194, 226);
+}
+#home-section .text-section .signup-btn a{
+    text-decoration:none;
+}
+#home-section .text-section .signup-btn a:hover{
+    color:blue;
+}
+#home-section .text-section .signup-btn:hover{
+    background:white;
+    transition:.5s ease-in;
+    color:blue;
+}
+.signup-btn #submit-button:hover{
+    color:rgb(104, 104, 228);
+}
+#home-section .text-section .signup-btn:hover::after{
+    background:white;
+    transition:.5s ease-out;
+    color:blue;
+}
+/*Form secction*/
+#form-section{
+
+    color:rgba(11, 173, 17, 0.299);
+    padding:20px;
+    margin-top:50px;
+    transition:.5s;
+
+}
+#form-section form{
+    margin-top:50px;
+}
+#form-section{
+    background:url('../img/pes.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    color:white;
+    overflow:hidden;
+    margin-top:-40px;
+    height:660px;
+}
+label{
+    font-family: 'Aldrich', sans-serif;
+}
+.show-case2{
+    display:flex;
+}
+.show-case2 img{
+    height:100px;
+    margin-top:-10px;
+}
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 500px) {
+    .overlay a {
+        font-size: 20px;
+    }
+    .closebtn {
+        font-size: 40px !important;
+        top: 15px;
+        right: 35px;
+    }
+}
+@media (max-width: 991px){
+     #menu{
+        
+        width:100px;
+        margin-right:50px;
+    }
+    #menu:hover #myNav{
+        display:block;
+    }
+    .text-section{
+        margin-top:-40px;
+    }
+    .hfiv{
+        margin-left:-20px;
+    }
+    .input{
+
+        display:none;
+
+    }
+    #myNav{
+
+        width:100%;
+    }
+    #home-section .text-section{
+
+        width:100%;
+        margin-left:1px;
+    }
+    .footballer{
+
+        width:80px;
+        height:50px;
+    }
+}
+
+@media (max-width:550px){
+
+    .footballer
+
+}

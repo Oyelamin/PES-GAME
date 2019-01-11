@@ -1,0 +1,28 @@
+.table{
+    margin:0px auto;
+    color:white;
+    padding:30px;
+    margin-top:20px;
+    width:80%;
+}
+td{
+    font-family: 'Righteous', cursive;
+}
+h1{
+    text-align:center;
+    padding:20px;
+    color:white;
+}
+.show-case{
+    display:inline;
+}
+.row{
+    padding:10px;
+}
+body{
+    background:url('../img/pes3.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:right;
+    background-attachment:fixed;
+}

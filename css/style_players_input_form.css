@@ -1,0 +1,23 @@
+*{
+    transition:.5s;
+
+}
+body{
+    transition:.5s;
+    padding:0;
+    margin:0;
+    background:url('../img/pes2.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:right;
+    background-attachment:fixed;
+}
+
+h1{
+    margin:auto;
+    padding:20px;
+    color:white;
+}
+form{
+    color:white;
+}
